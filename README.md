@@ -1,2 +1,2 @@
 # BitcoinUI
-User Interface to pull bitcoin information down hourly
+User Interface to pull bitcoin information and display 
