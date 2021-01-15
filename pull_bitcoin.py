@@ -2,10 +2,10 @@ from requests import Request, Session
 from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
 import json
 
-def cryptoPull():
+def cryptoPull(id):
     url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest'
     parameters = {
-        'start':'1',
+        'start':id,
         'limit':'1',
         'convert':'USD'
     }

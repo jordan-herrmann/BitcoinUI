@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>609</width>
-    <height>131</height>
+    <width>469</width>
+    <height>193</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,8 +17,8 @@
    <widget class="QPushButton" name="pullButton">
     <property name="geometry">
      <rect>
-      <x>208</x>
-      <y>60</y>
+      <x>200</x>
+      <y>120</y>
       <width>151</width>
       <height>25</height>
      </rect>
@@ -30,8 +30,8 @@
    <widget class="QLabel" name="labelCrypto">
     <property name="geometry">
      <rect>
-      <x>11</x>
-      <y>11</y>
+      <x>150</x>
+      <y>10</y>
       <width>107</width>
       <height>17</height>
      </rect>
@@ -43,7 +43,7 @@
    <widget class="QLineEdit" name="lineEditCrypto">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>150</x>
       <y>30</y>
       <width>142</width>
       <height>25</height>
@@ -56,8 +56,8 @@
    <widget class="QLabel" name="labelPrice">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>10</y>
+      <x>150</x>
+      <y>60</y>
       <width>132</width>
       <height>17</height>
      </rect>
@@ -69,8 +69,8 @@
    <widget class="QLineEdit" name="lineEditPrice">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>30</y>
+      <x>150</x>
+      <y>80</y>
       <width>142</width>
       <height>25</height>
      </rect>
@@ -82,7 +82,7 @@
    <widget class="QLabel" name="label24H">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>320</x>
       <y>10</y>
       <width>81</width>
       <height>17</height>
@@ -95,7 +95,7 @@
    <widget class="QLineEdit" name="lineEdit24H">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>320</x>
       <y>30</y>
       <width>142</width>
       <height>25</height>
@@ -108,8 +108,8 @@
    <widget class="QLabel" name="label1H">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>10</y>
+      <x>320</x>
+      <y>60</y>
       <width>72</width>
       <height>17</height>
      </rect>
@@ -121,8 +121,8 @@
    <widget class="QLineEdit" name="lineEdit1H">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>30</y>
+      <x>320</x>
+      <y>80</y>
       <width>142</width>
       <height>25</height>
      </rect>
@@ -131,13 +131,36 @@
      <bool>true</bool>
     </property>
    </widget>
+   <widget class="QComboBox" name="comboBoxCryptos">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>121</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelCryptoBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Choose:</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>609</width>
+     <width>469</width>
      <height>22</height>
     </rect>
    </property>
