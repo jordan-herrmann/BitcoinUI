@@ -11,6 +11,7 @@ class bitcoin_notifications_(QtWidgets.QMainWindow, Ui_MainWindow):
         super(bitcoin_notifications_, self).__init__(*args, **kwargs)
         self.setupUi(self)
         self.pullButton.clicked.connect(self.buttonUpdate)
+        self.comboBoxCryptos.addItems(["Bitcoin", "Ethereum", "Litecoin"])
 
     def updateFields(self):
         with open("/home/jordan/Projects/BitcoinUI/crypto.json", 'r') as cFile:
@@ -45,8 +46,18 @@ class bitcoin_notifications_(QtWidgets.QMainWindow, Ui_MainWindow):
         self.lineEditCrypto.setText(name)
         print(self.lineEditCrypto.text())
 
+    def determineSelection(self):
+        if(self.comboBoxCryptos.currentText() == "Bitcoin"):
+            returnID = '1'
+        elif(self.comboBoxCryptos.currentText() == "Ethereum"):
+            returnID = '2'
+        else:
+            returnID = '6'
+        return returnID
+
     def buttonUpdate(self):
-        pull_bitcoin.cryptoPull()
+        id = self.determineSelection()
+        pull_bitcoin.cryptoPull(id)
         # Check to see if cryptofile exists before updating
         try:
             cryptoFile = open("/home/jordan/Projects/BitcoinUI/crypto.json")
