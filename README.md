@@ -1,2 +1,2 @@
 # BitcoinUI
-User Interface to pull bitcoin information and display 
+User Interface to pull cryptocurrency information and display 
