@@ -1,7 +1,9 @@
 # This Python file uses the following encoding: utf-8
 import sys
-from PyQt5 import QtWidgets, uic, QtCore
+from PyQt5 import QtWidgets, uic
+from PyQt5.QtCore import QFile, QTextStream
 import pull_bitcoin
+import breeze_resources
 import json
 
 from bitcoin_notifications import Ui_MainWindow
@@ -70,6 +72,13 @@ class bitcoin_notifications_(QtWidgets.QMainWindow, Ui_MainWindow):
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
+
+    # set stylesheet
+    file = QFile("/home/jordan/Projects/BitcoinUI/stylesheet/BreezeStyleSheets-master/dark.qss")
+    file.open(QFile.ReadOnly | QFile.Text)
+    stream = QTextStream(file)
+    app.setStyleSheet(stream.readAll())
+
     window = bitcoin_notifications_()
     window.show()
     app.exec()

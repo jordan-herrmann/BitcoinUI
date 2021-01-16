@@ -17,9 +17,9 @@
    <widget class="QPushButton" name="pullButton">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>10</x>
       <y>120</y>
-      <width>151</width>
+      <width>451</width>
       <height>25</height>
      </rect>
     </property>
@@ -32,12 +32,12 @@
      <rect>
       <x>150</x>
       <y>10</y>
-      <width>107</width>
+      <width>121</width>
       <height>17</height>
      </rect>
     </property>
     <property name="text">
-     <string>Cryptocurrency</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Cryptocurrency&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEditCrypto">
@@ -58,12 +58,12 @@
      <rect>
       <x>150</x>
       <y>60</y>
-      <width>132</width>
+      <width>151</width>
       <height>17</height>
      </rect>
     </property>
     <property name="text">
-     <string>Current Price (USD)</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Current Price (USD)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEditPrice">
@@ -84,12 +84,12 @@
      <rect>
       <x>320</x>
       <y>10</y>
-      <width>81</width>
+      <width>121</width>
       <height>17</height>
      </rect>
     </property>
     <property name="text">
-     <string>24h Change</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;24h Change (%)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit24H">
@@ -110,12 +110,12 @@
      <rect>
       <x>320</x>
       <y>60</y>
-      <width>72</width>
+      <width>111</width>
       <height>17</height>
      </rect>
     </property>
     <property name="text">
-     <string>1h Change</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;1h Change (%)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit1H">
@@ -151,7 +151,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Choose:</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Choose:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
   </widget>
@@ -164,13 +164,6 @@
      <height>22</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuHelp">
-    <property name="title">
-     <string>Help</string>
-    </property>
-    <addaction name="actionInstructions"/>
-   </widget>
-   <addaction name="menuHelp"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionInstructions">
