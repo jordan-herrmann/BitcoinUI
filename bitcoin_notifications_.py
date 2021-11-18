@@ -14,7 +14,7 @@ class bitcoin_notifications_(QtWidgets.QMainWindow, Ui_MainWindow):
         self.comboBoxCryptos.addItems(["Bitcoin", "Ethereum", "Litecoin"])
 
     def updateFields(self):
-        with open("/home/jordan/Projects/BitcoinUI/crypto.json", 'r') as cFile:
+        with open("/home/jordan/Dev/BitcoinUI/crypto.json", 'r') as cFile:
             data = cFile.read()
 
         obj = json.loads(data)
@@ -60,7 +60,7 @@ class bitcoin_notifications_(QtWidgets.QMainWindow, Ui_MainWindow):
         pull_bitcoin.cryptoPull(id)
         # Check to see if cryptofile exists before updating
         try:
-            cryptoFile = open("/home/jordan/Projects/BitcoinUI/crypto.json")
+            cryptoFile = open("/home/jordan/Dev/BitcoinUI/crypto.json")
             self.updateFields()
         except IOError:
             print("File not accessible")
